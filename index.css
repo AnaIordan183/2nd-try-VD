@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    animation: bgAnimation 10s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    0% { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
+    100% { background: linear-gradient(45deg, #ff758c, #ff7eb3); }
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.dog img {
+    width: 250px;
+    animation: float 3s infinite ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
